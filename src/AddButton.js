@@ -1,6 +1,6 @@
 import React from "react";
 
-export class AddButton extends React.Component {
+export class AddButton extends React.PureComponent {
   render() {
     const { onClick } = this.props;
 
