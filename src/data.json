@@ -1,0 +1,27 @@
+[
+  {
+    "id": "08fc2870-9f1b-4273-94b0-138fed6bb0b7",
+    "label": "Pressurize lander",
+    "offset": { "x": 140.11409828829557, "y": 111.10606063271291 }
+  },
+  {
+    "id": "f089f64e-d8c0-42b9-a9a9-632945757089",
+    "label": "Fix transmitter",
+    "offset": { "x": -210.6153714795077, "y": 76.98411020372606 }
+  },
+  {
+    "id": "03e4cdaa-ddc8-424b-ad42-bd338e1c1341",
+    "label": "Find a way out of canyon",
+    "offset": { "x": 249.7548043318567, "y": -83.47940119736941 }
+  },
+  {
+    "id": "934df7fb-543e-4653-81c6-5289a204cde1",
+    "label": "Find extra oxygen tank",
+    "offset": { "x": 244.01058779340246, "y": 128.1634215722055 }
+  },
+  {
+    "id": "c448ae57-96d9-4e95-b36e-a770dcdb9e06",
+    "label": "Fix rover",
+    "offset": { "x": -218.98560538708068, "y": 142.7306550141534 }
+  }
+]
