@@ -1,8 +1,8 @@
 import React from "react";
 
-export class Card extends React.Component {
-  render() {
-    const { card, onDragStart, onDragEnd, onDoubleClick } = this.props;
+export const Card = React.memo(
+  function Card(props) {
+    const { card, onDragStart, onDragEnd, onDoubleClick } = props;
 
     return (
       <div
@@ -29,5 +29,9 @@ export class Card extends React.Component {
         {card.label}
       </div>
     );
-  }
-}
+  },
+  ({ card: oldCard }, { card: newCard }) =>
+    oldCard.id === newCard.id &&
+    oldCard.position.left === newCard.position.left &&
+    oldCard.position.top === newCard.position.top
+);
