@@ -104,7 +104,7 @@ function App() {
           onAdd={cardText => {
             addCard(cards, cardText);
             positionCards(cards, width, height);
-            setCards(cards);
+            setCards({ ...cards });
           }}
         />
       )}
