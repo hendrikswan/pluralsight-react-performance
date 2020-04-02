@@ -9,6 +9,8 @@ export const Summary = React.memo(
 
     const cards = Object.values(props.cards);
 
+
+    console.time('calc-distances')
     const distances = { max: 0, min: 100000 };
     cards.forEach(currentCard => {
       cards.forEach(compareCard => {
@@ -21,6 +23,7 @@ export const Summary = React.memo(
         distances.min = Math.min(distances.min, distance);
       });
     });
+    console.timeEnd('calc-distances')
 
     return (
       <div className={`Summary Summary-${position}`}>
