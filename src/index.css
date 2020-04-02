@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*.arrow {*/
+/*  width: 0;*/
+/*  height: 0;*/
+/*  position: absolute;*/
+/*  border-left: 40px solid transparent;*/
+/*  border-right: 40px solid transparent;*/
+/*  border-bottom: 40px solid black;*/
+/*}*/
+
+/*.arrow-top-right {*/
+/*  transform: rotate(45deg);*/
+/*  top: 10px;*/
+/*  right: -26px;*/
+/*}*/
+
+/*.arrow-top-left {*/
+/*  transform: rotate(-45deg);*/
+/*  top: 7px;*/
+/*  left: -26px;*/
+/*}*/
+
+/*.arrow-bottom-left {*/
+/*  transform: rotate(225deg);*/
+/*  bottom: -20px;*/
+/*  left: -26px;*/
+/*}*/
+
+.arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid black;
+}
+
+.arrow-top-right {
+  transform: rotate(45deg);
+  top: -6px;
+  right: -16px;
+}
+
+.arrow-top-left {
+  transform: rotate(-45deg);
+  top: -6px;
+  left: -16px;
+}
+
+.arrow-bottom-left {
+  transform: rotate(225deg);
+  bottom: -6px;
+  left: -16px;
+}
+
+.arrow-bottom-right {
+  transform: rotate(135deg);
+  bottom: -6px;
+  right: -16px;
 }

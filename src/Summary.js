@@ -1,5 +1,6 @@
 import React from "react";
 import levenshtein from "levenshtein";
+import {CornerButton} from "./CornerButton";
 
 export const Summary = React.memo(
   function Summary(props) {
@@ -32,6 +33,11 @@ export const Summary = React.memo(
         <div>You have {Object.keys(props.cards).length} cards!</div>
         <div>Max difference in labels: {distances.max}</div>
         <div>Min difference in labels: {distances.min}</div>
+
+          <CornerButton corner="top-right" />
+          <CornerButton corner="top-left" />
+          <CornerButton corner="bottom-left" />
+          <CornerButton corner="bottom-right" />
       </div>
     );
   },
