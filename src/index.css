@@ -46,6 +46,8 @@ code {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid black;
+
+  cursor: pointer;
 }
 
 .arrow-top-right {
@@ -70,4 +72,8 @@ code {
   transform: rotate(135deg);
   bottom: -6px;
   right: -16px;
+}
+
+.arrow-active {
+  display: none;
 }

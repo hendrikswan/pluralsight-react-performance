@@ -1,33 +1,7 @@
 import React from "react";
 
-export function CornerButton({ corner }) {
-  // let position = {
-  //   top: 0,
-  //   left: 0
-  // };
-  //
-  // if (corner === "top-right") {
-  //   position = {
-  //     top: 0,
-  //     right: 0
-  //   };
-  // }
-  //
-  // if (corner === "bottom-left") {
-  //   position = {
-  //     bottom: 0,
-  //     left: 0
-  //   };
-  // }
-  //
-  // if (corner === "bottom-right") {
-  //   position = {
-  //     bottom: 0,
-  //     right: 0
-  //   };
-  // }
-
+export function CornerButton({ corner, setPosition, position }) {
   return (
-    <div className={`arrow arrow-${corner}`} />
+    <div onClick={() => setPosition(corner)} className={`arrow arrow-${corner} ${position === corner ? 'arrow-active' : ''}`} />
   );
 }

@@ -1,0 +1,26 @@
+.Summary {
+  position: absolute;
+  backgroundcolor: #fafafa;
+  padding: 10px;
+  border: 3px solid #333;
+}
+
+.Summary-top-left {
+  left: 20px;
+  top: 20px;
+}
+
+.Summary-top-right {
+  right: 20px;
+  top: 20px;
+}
+
+.Summary-bottom-right {
+  right: 20px;
+  bottom: 20px;
+}
+
+.Summary-bottom-left {
+  left: 20px;
+  bottom: 20px;
+}
