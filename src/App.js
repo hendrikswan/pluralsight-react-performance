@@ -30,6 +30,15 @@ function parseData() {
 
   cardData.forEach(task => {
     cards[task.id] = task;
+
+    for (let i = 0; i < 50; i++) {
+      const clonedCard = {
+        ...task,
+        id: uuid.v4(),
+        label: `${task.label}-(${i})`
+      };
+      cards[clonedCard.id] = clonedCard;
+    }
   });
 
   return cards;
