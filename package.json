@@ -13,7 +13,7 @@
     "react-confetti": "^5.0.1",
     "react-dom": "^16.12.0",
     "react-modal": "^3.11.1",
-    "react-scripts": "3.3.0",
+    "react-scripts": "3.4.1",
     "resize-observer-polyfill": "^1.5.1",
     "uuid": "^3.3.3"
   },
